@@ -45,7 +45,7 @@ model = dict(
             type='CrossEntropyLoss',
             use_sigmoid=False,
             reduction='none',
-            loss_weight=1.0),
+            loss_weight=3.0),
         loss_bbox=dict(type='SmoothL1Loss', beta=1.0, loss_weight=1.5),
         num_head_convs=1,
         num_protos=32,
